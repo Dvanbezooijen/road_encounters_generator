@@ -8,12 +8,10 @@ Created on Wed Feb  4 11:20:17 2026
 import streamlit as st
 from roadEncountersGenerator import computeEncountersRoad  # adjust import
 
-st.title("Road User Encounters Calculator")
+st.title("Road user encounter model")
 
 st.header("Road data")
-st.write("Input the road data. Notes:")
-st.write("There are two directions on the road 'to' and 'from'")
-st.write("A maximum of 1 cycling lane per direction is available. If no cyclist lane or cyclists are present, enter a rate of 0")
+st.write("Input the road data. Click the 'Compute encounters' button below to run the model. Notes: \\ There are two directions on the road 'to' and 'from' \\ A maximum of 1 cycling lane per direction is available. If no cyclist lane or cyclists are present, enter a rate of 0")
    
 aantal_rijstroken_heen = st.number_input(
     "Number of motor vehicle lanes (to)", min_value=0, value=1, step=1
