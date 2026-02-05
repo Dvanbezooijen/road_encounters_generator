@@ -11,7 +11,7 @@ from roadEncountersGenerator import computeEncountersRoad  # adjust import
 st.title("Road User Encounters Calculator")
 
 st.header("Road data")
-st.write("Input the road data. Notes:
+st.write("Input the road data. Notes:")
 st.write("There are two directions on the road 'to' and 'from'")
 st.write("A maximum of 1 cycling lane per direction is available. If no cyclist lane or cyclists are present, enter a rate of 0")
    
@@ -76,7 +76,7 @@ if st.button("Compute encounters"):
     )
 
     st.write("Breakdown:")
-    st.write(f"🚗🚗 Car–Car: {results['ccEncountersHour']*24:.0f}")
-    st.write(f"🚲🚗 Bike–Car: {results['bcEncountersHour']*24:.0f}")
+    st.write(f"🚗🚗 MV–MV: {results['ccEncountersHour']*24:.0f}")
+    st.write(f"🚲🚗 Bike–MV: {results['bcEncountersHour']*24:.0f}")
     st.write(f"🚲🚲 Bike–Bike: {results['bbEncountersHour']*24:.0f}")
     st.write("Since the model outputs float point numbers, rounding errors may apply the the above results")
