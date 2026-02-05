@@ -11,7 +11,7 @@ from roadEncountersGenerator import computeEncountersRoad  # adjust import
 st.title("Road user encounter model")
 
 st.header("Road data")
-st.write("Input the road data. Click the 'Compute encounters' button below to run the model. Notes: \n There are two directions on the road 'to' and 'from' \n A maximum of 1 cycling lane per direction is available \n If no cyclist lane or cyclists are present, enter a rate of 0")
+st.write("Input the road data. Click the 'Compute encounters' button below to run the model. Notes: "\n" There are two directions on the road 'to' and 'from' \n A maximum of 1 cycling lane per direction is available \n If no cyclist lane or cyclists are present, enter a rate of 0")
    
 aantal_rijstroken_heen = st.number_input(
     "Number of motor vehicle lanes (to)", min_value=0, value=1, step=1
