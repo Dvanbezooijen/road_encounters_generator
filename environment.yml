@@ -4,4 +4,6 @@ channels:
 dependencies:
   - python=3.11
   - numpy
-  - streamlit
+  - pip
+  - pip:
+      - streamlit
