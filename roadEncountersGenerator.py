@@ -81,7 +81,7 @@ def computeEncountersRoad(
 
     #Initialize encounter matrices
     encountersTowards = np.zeros((nLanes,nLanes))
-    encountersAlong = encountersTowards
+    encountersAlong = np.zeros((nLanes,nLanes))
     #Iniatialize rates and speeds lists
     ratesHour = []
     speedsKmh = []
