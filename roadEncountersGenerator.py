@@ -112,7 +112,7 @@ def computeEncountersRoad(
         for laneB in range(laneA,nLanes):
             rateA, rateB = ratesHour[laneA], ratesHour[laneB]
             speedA, speedB = speedsKmh[laneA], speedsKmh[laneB]
-            enc = computeEncounters(rateA, rateB, speedA, speedB, length_km, 0.84,groupWindow=2)
+            enc = computeEncounters(rateA, rateB, speedA, speedB, length_km, 0.84,groupWindow=1)
             encountersAlong[laneA, laneB] = enc['Encounters (along)']
             encountersTowards[laneA, laneB] = enc['Encounters (towards)']
 
